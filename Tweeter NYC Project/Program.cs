@@ -30,7 +30,14 @@ namespace TeeterNYCProject
 
             int c4 = 0;
 
-            int twtcount = 1;
+            // Filters
+            string f1 = "javascript";
+
+            string f2 = "python";
+
+            string f3 = "java";
+
+            string f4 = "c#";
 
             stream.MatchingTweetReceived += (sender, eventReceived) =>
             {
