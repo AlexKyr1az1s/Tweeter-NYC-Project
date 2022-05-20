@@ -51,6 +51,27 @@ namespace TeeterNYCProject
                 Console.WriteLine(twtauthorname, " ", x);
                 Console.WriteLine(eventReceived.Tweet);
                 Console.WriteLine("");
+
+                //counters
+                if (twttxt.Contains(f1))
+                {
+                    c1++;
+                }
+
+                if (twttxt.Contains(f2))
+                {
+                    c2++;
+                }
+
+                if (twttxt.Contains(f3))
+                {
+                    c3++;
+                }
+
+                if (twttxt.Contains(f4))
+                {
+                    c4++;
+                }
             };
 
             await stream.StartMatchingAnyConditionAsync();
