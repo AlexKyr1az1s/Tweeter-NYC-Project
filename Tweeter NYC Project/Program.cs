@@ -24,7 +24,16 @@ namespace TeeterNYCProject
 
             stream.MatchingTweetReceived += (sender, eventReceived) =>
             {
+                ITweet tweet = eventReceived.Tweet;
+                string twttxt = eventReceived.Tweet.FullText;
+                int x = tweet.FavoriteCount;
+                string twtauthorname = tweet.CreatedBy.Name;
+
+                //show twts
+                Console.WriteLine("");
+                Console.WriteLine(twtauthorname, " ", x);
                 Console.WriteLine(eventReceived.Tweet);
+                Console.WriteLine("");
             };
 
             await stream.StartMatchingAnyConditionAsync();
