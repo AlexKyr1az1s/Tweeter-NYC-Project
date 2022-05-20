@@ -21,6 +21,16 @@ namespace TeeterNYCProject
             stream.AddTrack("python");
             stream.AddTrack("java");
             stream.AddTrack("c#");
+            // Counters
+            int c1 = 0;
+
+            int c2 = 0;
+
+            int c3 = 0;
+
+            int c4 = 0;
+
+            int twtcount = 1;
 
             stream.MatchingTweetReceived += (sender, eventReceived) =>
             {
