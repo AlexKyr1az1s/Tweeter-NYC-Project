@@ -30,6 +30,8 @@ namespace TeeterNYCProject
 
             int c4 = 0;
 
+            int twtcount = 1;
+
             // Filters
             string f1 = "javascript";
 
