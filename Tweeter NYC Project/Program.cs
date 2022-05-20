@@ -52,6 +52,8 @@ namespace TeeterNYCProject
                 Console.WriteLine(eventReceived.Tweet);
                 Console.WriteLine("");
 
+                Console.WriteLine(f1, ":", c1, ", ", f2, ":", c2, ", ", f3, ":", c3, ", ", f4, ":", c4);
+
                 //counters
                 if (twttxt.Contains(f1))
                 {
