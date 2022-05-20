@@ -74,6 +74,15 @@ namespace TeeterNYCProject
                 {
                     c4++;
                 }
+
+                //Terminate
+                if (twtcount == 100)
+                {
+                    stream.Stop();
+                    Console.WriteLine("Complite!");
+                }
+
+                twtcount++;
             };
 
             await stream.StartMatchingAnyConditionAsync();
