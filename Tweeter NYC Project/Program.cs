@@ -18,6 +18,9 @@ namespace TeeterNYCProject
             //keywords for twt collection
             var stream = userClient.Streams.CreateFilteredStream();
             stream.AddTrack("Javascript");
+            stream.AddTrack("python");
+            stream.AddTrack("java");
+            stream.AddTrack("c#");
 
             stream.MatchingTweetReceived += (sender, eventReceived) =>
             {
